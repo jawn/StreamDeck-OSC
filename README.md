@@ -10,7 +10,7 @@ It's a plugin for the [Elgato Stream Deck][Stream Deck] that sends basic [OpenSo
 
 ## What Is It Not (and what can't it do?)
 
-It's not a full OSC protocol implementation. Every device and software uses the protocol a bit differently and making all possible cases available in the program is pr way too time consuming for me.
+It's not a full OSC protocol implementation. Every device and software uses the protocol a bit differently and making all possible cases available in the program is way too time consuming for me.
 
 ## Release / Installation
 
@@ -42,8 +42,8 @@ To configure default values, edit the configuration file
 }
 ```
 You can change any value you want to be preset for new buttons. Existing buttons on the deck will **not** change their settings (whether this is good or bad is up to your consideration, but that's how it is ;) )
-Make sure to enter the right data type, e.g. don't use integers where strings would go (or vice versa), make sure the float value has a devider and the values makes sense
-If you change the file and things are not working out anymore, that's most like the spot to check.
+Make sure to enter the right data type, e.g. don't use integers where strings would go (or vice versa), make sure the float value has a divider and the values makes sense
+If you change the file and things are not working out anymore, that's most likely the spot to check.
 # Limitations
 
 - Windows 10/11 with .NET Framework is required to run this plugin.
@@ -70,6 +70,6 @@ I'm in no way affiliated with Elgato. I wrote this plugin out of personal intere
 ### Fixed
 - - plugin would not accept an integer or float with the value of 0
 - - IP and port are now preset and don't have to be manually entered for every single button (don't know what I was thinking honestly)
-- - Various minor fixes mainly regarding not catching possible null values etc. but since I rewrote most of the code, that's a goner now to.
+- - Various minor fixes mainly regarding not catching possible null values etc. But since I rewrote most of the code, that's a goner now to.
 ### Improved/Changed
-- Added local config file that allows to change the preset for now buttons (existing ones will remain as they are) of all possible values, e.g. change IP, Port, Address, values to reflect setups that divert from the plugin default.
+- Added local config file that allows to change the preset for new buttons (existing ones will remain as they are) of all possible values, e.g. change IP, Port, Address, values to reflect setups that divert from the plugin default.
